@@ -13,7 +13,8 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
-a:hover {
+a:hover,
+label:hover {
   cursor: url(../resources/images/LogoCursor.cur), auto;
 }
 body {
@@ -29,6 +30,11 @@ body {
   height: 100vh;
   width: 100vw;
   cursor: url(../resources/images/LogoCursor.cur), auto;
+}
+
+.reposition {
+  position: absolute !important;
+  z-index: auto !important;
 }
 
 #vizzy {
@@ -57,15 +63,7 @@ body {
 .theme-stroke-dark {
   stroke: $dark-secondary !important;
 }
-.invert-ctas {
-  background-color: $dark-secondary !important;
-  color: $dark-primary !important;
-}
-.invert-nav-list-items {
-  background-color: $dark-secondary !important;
-  color: $dark-primary !important;
-}
-.invert-port-links {
+.invert-btn {
   background-color: $dark-secondary !important;
   color: $dark-primary !important;
 }
@@ -100,7 +98,7 @@ header {
   position: fixed;
   left: 0;
   width: 100vw;
-  z-index: 900;
+  z-index: 500;
   .home-link {
     &:hover {
       cursor: url("../resources/images/Logo.cur"), auto;
@@ -117,7 +115,8 @@ header {
     z-index: 500;
   }
   .burger-wrap {
-    position: absolute;
+    // position: absolute;
+    position: fixed;
     display: block;
     top: 0;
     right: 0;
@@ -181,7 +180,7 @@ header {
   }
   .global-nav,
   .drawer {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -100vw;
     height: 100vh;
@@ -533,6 +532,7 @@ main {
   width: 100vw;
   margin-top: 10em;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -541,6 +541,14 @@ main {
     position: absolute;
     bottom: 106px;
     right: 50px;
+  }
+  .contact-heading {
+    font-size: 3em;
+    font-weight: 500;
+    @include md {
+      align-self: flex-start;
+      margin-left: 3em;
+    }
   }
   form {
     width: 80%;
@@ -565,9 +573,10 @@ main {
     margin: 1em;
   }
 
-  label {
+  .contact-label {
     font-size: 1.5em;
     margin-bottom: 1em;
+    font-weight: 500;
   }
 
   .form-input,
@@ -586,7 +595,7 @@ main {
 
   .submit {
     display: block;
-    background: $secondary !important;
+    background-color: $secondary;
     color: $primary;
     padding: 0.5em 1em;
     font-size: 2em;
@@ -597,8 +606,6 @@ main {
 
 ////////////////////////
 /// about
-///
-///
 ///
 .about-main {
   min-height: 100vh;
