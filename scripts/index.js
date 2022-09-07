@@ -47,10 +47,7 @@ themeToggle.addEventListener("click", () => {
   navItems.forEach((el) => {
     el.classList.toggle("invert-btn");
   });
-  if (
-    window.location.href.indexOf("index") > -1 ||
-    window.location.href.indexOf("about") > -1
-  ) {
+  if (!window.location.href.indexOf("contact") > -1) {
     ctas.forEach((el) => {
       el.classList.toggle("invert-btn");
     });
