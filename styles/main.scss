@@ -5,6 +5,7 @@
 
 html {
   font-size: 0.625em;
+  scrollbar-width: none;
 }
 a,
 a:hover,
@@ -30,6 +31,9 @@ body {
   height: 100vh;
   width: 100vw;
   cursor: url(../resources/images/LogoCursor.cur), auto;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 .reposition {
@@ -320,10 +324,9 @@ main {
     margin: 4em 1em 0;
     @include xs {
       flex-direction: column;
-      margin: 18em 1em 0;
     }
     @include sm {
-      margin: 22em 6em 0;
+      margin: 12em 6em 0;
       height: 200px;
     }
     @include md {
@@ -602,6 +605,10 @@ main {
     font-size: 2em;
     line-height: 1.5;
     margin: 1em auto;
+    &:hover {
+      cursor: url(../resources/images/LimeCur.png), auto !important;
+      outline: 1px solid lime;
+    }
   }
 }
 
@@ -610,10 +617,13 @@ main {
 ///
 .about-main {
   min-height: 100vh;
-  margin-top: 12em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .about-me-wrap {
+    margin-top: 10em;
     padding: 2em;
-    margin-bottom: 16em;
+    margin-bottom: 5em;
     background-color: rgba(255, 255, 255, 0.9);
     h1 {
       font-size: 4em;
@@ -621,6 +631,65 @@ main {
     }
     p {
       font-size: 2em;
+      margin-right: 2em;
+      @include md {
+        margin-left: 2em;
+      }
     }
+  }
+}
+
+////////////////////////
+/// footer
+///
+
+.footer-links {
+  display: flex;
+  position: absolute;
+  rotate: -90deg;
+  translate: -75px;
+  bottom: 100px;
+  @include sm {
+    rotate: none !important;
+    translate: 40px;
+    bottom: 10px;
+  }
+  @include md {
+    width: 30vw;
+    justify-content: space-around;
+  }
+}
+
+.footer-link {
+  display: block;
+  width: 50px;
+  rotate: 90deg;
+  margin: 1em;
+  @include sm {
+    rotate: none !important;
+  }
+}
+
+.contact-footer-links {
+  display: flex;
+  width: 100vw;
+  max-width: 1000px;
+  justify-content: space-around;
+}
+.contact-footer-link {
+  rotate: none !important;
+}
+
+.about-footer-links {
+  position: relative;
+  translate: none;
+  rotate: none;
+  bottom: 0 !important;
+  flex-direction: column;
+  .footer-link {
+    rotate: none;
+  }
+  @include md {
+    flex-direction: row;
   }
 }

@@ -16,6 +16,7 @@ let submit = document.querySelector(".submit");
 
 let logoSvgCls1 = document.querySelectorAll(".cls-1");
 let logoSvgCls2 = document.querySelectorAll(".cls-2");
+let socials = document.querySelectorAll(".social-icon");
 let ctas = document.querySelectorAll(".cta");
 
 navToggle.addEventListener("click", () => {
@@ -28,14 +29,31 @@ navToggle.addEventListener("click", () => {
 });
 
 let themeToggle = document.querySelector("#theme-toggle");
+let userTheme = localStorage.getItem("PrefersDark");
+if (userTheme == "true") {
+  invertAll();
+}
+
 themeToggle.addEventListener("click", () => {
-  let userTheme = localStorage.getItem("PrefersDark");
-  if (!localStorage.getItem("PrefersDark")) {
+  if (!userTheme) {
     localStorage.setItem("PrefersDark", true);
+    invertAll();
   }
   if (userTheme == "true") {
     localStorage.removeItem("PrefersDark");
+    invertAll();
   }
+});
+
+navToggle.addEventListener("click", () => {
+  navToggle.classList.toggle("expanded");
+  drawer.style.visibility = "visible";
+  glodalNav.style.visibility = "visible";
+  glodalNav.classList.toggle("nav-slide-in");
+  drawer.classList.toggle("nav-slide-in");
+});
+
+function invertAll() {
   themeToggle.classList.toggle("flip");
   burger.classList.toggle("dark-burger");
   allTextEls.forEach((el) => {
@@ -46,6 +64,9 @@ themeToggle.addEventListener("click", () => {
   });
   navItems.forEach((el) => {
     el.classList.toggle("invert-btn");
+  });
+  socials.forEach((el) => {
+    el.classList.toggle("theme-fill-dark");
   });
   if (!window.location.href.indexOf("contact") > -1) {
     ctas.forEach((el) => {
@@ -72,12 +93,4 @@ themeToggle.addEventListener("click", () => {
   if (window.location.href.indexOf("contact") > -1) {
     submit.classList.toggle("invert-btn");
   }
-});
-
-navToggle.addEventListener("click", () => {
-  navToggle.classList.toggle("expanded");
-  drawer.style.visibility = "visible";
-  glodalNav.style.visibility = "visible";
-  glodalNav.classList.toggle("nav-slide-in");
-  drawer.classList.toggle("nav-slide-in");
-});
+}

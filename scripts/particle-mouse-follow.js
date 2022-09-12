@@ -14,7 +14,7 @@ window.addEventListener("resize", () => {
 window.addEventListener("click", (event) => {
   mouse.x = event.x;
   mouse.y = event.y;
-  for (let i = 0; i < 15; i++) {
+  for (let i = 0; i < 50; i++) {
     particleArray.push(new Particle());
   }
   //   particleArray.push(new Particle());
@@ -22,7 +22,7 @@ window.addEventListener("click", (event) => {
 window.addEventListener("mousemove", (event) => {
   mouse.x = event.x;
   mouse.y = event.y;
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 5; i++) {
     particleArray.push(new Particle());
   }
 });
@@ -52,7 +52,7 @@ class Particle {
 }
 
 function init() {
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 5; i++) {
     particleArray.push(new Particle());
   }
 }
