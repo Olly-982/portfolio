@@ -2,6 +2,38 @@
 <html lang="en" style="overflow-y: scroll;">
 
 <head>
+    <meta name="robots" content="index follow">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDPV6PK5G2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZDPV6PK5G2');
+    </script>
+    <link rel="shortcut icon" href="./resources/images/MetaLogo.svg" type="image/x-icon">
+    <link rel="dns-prefetch" href="https://jamesvincentdesign.com">
+    <!-- HTML Meta Tags -->
+    <meta name="description" content="A Vancouver based BCIT New Media and Web development student and freelance designer/developer. Contact me with any questions.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.jamesvincentdesign/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="jamesvincentdesign">
+    <meta property="og:description" content="A Vancouver based BCIT New Media and Web development student and freelance designer/developer. Contact me with any questions.">
+    <meta property="og:image" content="https://www.jamesvincentdesign.com/resources/images/MetaLogo.svg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="">
+    <meta property="twitter:url" content="https://www.jamesvincentdesign/">
+    <meta name="twitter:title" content="jamesvincentdesign">
+    <meta name="twitter:description" content="A Vancouver based BCIT New Media and Web development student and freelance designer/developer. Contact me with any questions.">
+    <meta name="twitter:image" content="https://www.jamesvincentdesign.com/resources/images/MetaLogo.svg">
     <!-- FAVICON LINKS -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package_v0.16/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0.16/favicon-32x32.png" />
@@ -9,6 +41,7 @@
     <link rel="mask-icon" href="./favicon_package_v0.16/safari-pinned-tab.svg" color="#2f383a" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+
     <!-- PAGE SETUP -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
