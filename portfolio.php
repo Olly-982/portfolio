@@ -1,3 +1,4 @@
+<?php $currPage = "Portfolio" ?>
 <?php include "./partials/head.php" ?>
 <?php include "./partials/headerNav.php" ?>
 <style>

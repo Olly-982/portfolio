@@ -1,3 +1,4 @@
+<?php $currPage = "Contact" ?>
 <?php include "./partials/head.php" ?>
 <?php include "./partials/headerNav.php" ?>
 <?php $success = $_GET["success"]; ?>

@@ -55,7 +55,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;700&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
     <!-- STYLES -->
     <link rel="stylesheet" href="styles/main.min.css" />
-    <title>Porfolio | jamesvicentdesign</title>
+    <title><?php echo $currPage ?> | jamesvicentdesign</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script defer src="./scripts/particle-mouse-follow.js"></script>
     <script defer src="./scripts/index.js"></script>

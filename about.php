@@ -1,3 +1,4 @@
+<?php $currPage = "About" ?>
 <?php include "./partials/head.php" ?>
 <?php include "./partials/headerNav.php" ?>
 <style>
@@ -14,7 +15,7 @@
 <main class="about-main">
     <div class="about-me-wrap block-el">
         <h1 class="text-el">About Me</h1>
-        <p class="text-el"> I am James Vincent! I have been interested in visual arts all of my life, spending most of my twenties painting, designing, and running a small t-shirt printing company. In the past 3 years I have been inspired to pursue some of my more technical interests and have fallen in love with development. I have always enjoyed puzzles and am really at my best when faced with a problem to solve. My knowledge of HTML 5, CSS, Javascript and Python has been increasing over the past year and am finding myself all the more confident with my abilities. It's my belief that human computer interaction has never been more important and that I have something to offer the field. My creativity, empathy and stubbornness have proven to be assets while learning all the skills necessary to become a web developer.
+        <p class="text-el"> I am James Vincent! I have been interested in visual arts all of my life, spending most of my twenties painting, designing, and running a small t-shirt printing company. In the past 3 years I have been inspired to pursue some of my more technical interests and have fallen in love with development. I have always enjoyed puzzles and am really at my best when faced with a problem to solve. My knowledge of <strong style="font-weight: 700;">HTML 5</strong>, <strong style="font-weight: 700;">CSS 3</strong>, <strong style="font-weight: 700;">Javascript</strong> and <strong style="font-weight: 700;">Python 3</strong> has been increasing over the past year and am finding myself all the more confident with my abilities. It's my belief that human computer interaction has never been more important and that I have something to offer the field. My creativity, empathy and stubbornness have proven to be assets while learning all the skills necessary to become a web developer.
         </p>
         <p class="text-el">I'd love to hear from you if you have any questions or just have something to say.</p>
     </div>

@@ -1,3 +1,4 @@
+<?php $currPage = "Home" ?>
 <?php include "./partials/head.php" ?>
 <?php include "./partials/headerNav.php" ?>
 <main>
