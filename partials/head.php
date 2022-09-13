@@ -15,7 +15,7 @@
 
         gtag('config', 'G-ZDPV6PK5G2');
     </script>
-    <link rel="shortcut icon" href="./resources/images/MetaLogo.svg" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="./resources/images/MetaLogo.svg" type="image/x-icon"> -->
     <link rel="dns-prefetch" href="https://jamesvincentdesign.com">
     <!-- HTML Meta Tags -->
     <meta name="description" content="A Vancouver based BCIT New Media and Web development student and freelance designer/developer. Contact me with any questions.">
