@@ -17,7 +17,6 @@ window.addEventListener("click", (event) => {
   for (let i = 0; i < 50; i++) {
     particleArray.push(new Particle());
   }
-  //   particleArray.push(new Particle());
 });
 window.addEventListener("mousemove", (event) => {
   mouse.x = event.x;
@@ -31,12 +30,10 @@ class Particle {
   constructor() {
     this.x = mouse.x;
     this.y = mouse.y;
-    // this.x = Math.random() * canvas.width;
-    // this.y = Math.random() * canvas.height;
     this.size = Math.random() * 15 + 1;
-    this.speedX = Math.random() * 3 - 1.5;
-    this.speedY = Math.random() * 3 - 1.5;
-    this.color = `hsl(${hue}, 100%, 50%)`;
+    this.speedX = Math.random() * 2 - 1;
+    this.speedY = Math.random() * 2 - 1;
+    this.color = `hsla(${hue}, 100%, 60%, 75%)`;
   }
   update() {
     this.x += this.speedX;
@@ -52,7 +49,7 @@ class Particle {
 }
 
 function init() {
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 6; i++) {
     particleArray.push(new Particle());
   }
 }
@@ -70,12 +67,7 @@ function drawParticles() {
 }
 
 function animate() {
-  // below clears the canvas
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  // now we fill the canvas with black 2% opaque
-  // this allows us to see the trails of the particles
-  // ctx.fillStyle = 'rgba(0, 0, 0, 0.02)';
-  // ctx.fillRect(0, 0, canvas.width, canvas.height);
   drawParticles();
   hue += 2;
   requestAnimationFrame(animate);

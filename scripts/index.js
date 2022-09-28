@@ -1,35 +1,57 @@
-let vizzy = document.querySelector("#vizzy");
-let burger = document.querySelector(".burger-wrap");
-let glodalNav = document.querySelector(".global-nav");
-let drawer = document.querySelector(".drawer");
-let allBlockEls = document.querySelectorAll(".block-el");
-let allTextEls = document.querySelectorAll(".text-el");
-let navToggle = document.querySelector("#navToggle");
-let navItems = document.querySelectorAll(".nav-list-item");
-let portLinks = document.querySelectorAll(".port-link");
-let allDetails = document.querySelectorAll(".details");
-let contact = document.querySelector(".contact");
-let contactWrap = document.querySelector(".contact-wrapper");
-let aboutWrap = document.querySelector(".about-me-wrap ");
-let header = document.querySelector("header");
-let submit = document.querySelector(".submit");
+const vizzy = document.querySelector("#vizzy");
+const burger = document.querySelector("#burger");
+const glodalNav = document.querySelector(".global-nav");
+const drawer = document.querySelector(".drawer");
+const body = document.querySelector("body");
+const allSVGPaths = document.querySelectorAll(".cls-2");
 
-let logoSvgCls1 = document.querySelectorAll(".cls-1");
-let logoSvgCls2 = document.querySelectorAll(".cls-2");
-let socials = document.querySelectorAll(".social-icon");
-let ctas = document.querySelectorAll(".cta");
+const allPortfolioFilter = document.querySelector("#all");
+if (allPortfolioFilter) {
+  allPortfolioFilter.focus();
+}
 
-navToggle.addEventListener("click", () => {
-  header.classList.toggle("reposition");
-  if (!navToggle.classList.contains("expanded")) {
+//////////////////////////////
+// svg anmation
+allSVGPaths.forEach((el) => {
+  length = el.getTotalLength();
+  console.log(length);
+});
+
+// anime({
+//   targets: "#Layer_1, .cls-2",
+//   strokeDashoffset: [anime.setDashoffset, 0],
+//   easing: "easeInOutSine",
+//   duration: 1500,
+//   delay: function (el, i) {
+//     return i * 550;
+//   },
+//   direction: "alternate",
+//   loop: true,
+// });
+
+///////////////////////////////////
+// nav event handlers
+burger.addEventListener("click", () => {
+  header.classList.toggle("restackZ");
+  if (!burger.classList.contains("expanded")) {
     vizzy.style.zIndex = 400;
   } else {
     vizzy.style.zIndex = -3;
   }
 });
 
-let themeToggle = document.querySelector("#theme-toggle");
-let userTheme = localStorage.getItem("PrefersDark");
+burger.addEventListener("click", () => {
+  burger.classList.toggle("expanded");
+  drawer.style.visibility = "visible";
+  glodalNav.style.visibility = "visible";
+  glodalNav.classList.toggle("nav-slide-in");
+  drawer.classList.toggle("nav-slide-in");
+});
+
+////////////////////////////////////
+// theme toggle
+const themeToggle = document.querySelector("#theme-toggle");
+const userTheme = localStorage.getItem("PrefersDark");
 if (userTheme == "true") {
   invertAll();
 }
@@ -45,52 +67,8 @@ themeToggle.addEventListener("click", () => {
   }
 });
 
-navToggle.addEventListener("click", () => {
-  navToggle.classList.toggle("expanded");
-  drawer.style.visibility = "visible";
-  glodalNav.style.visibility = "visible";
-  glodalNav.classList.toggle("nav-slide-in");
-  drawer.classList.toggle("nav-slide-in");
-});
-
 function invertAll() {
   themeToggle.classList.toggle("flip");
   burger.classList.toggle("dark-burger");
-  allTextEls.forEach((el) => {
-    el.classList.toggle("theme-text-dark");
-  });
-  allBlockEls.forEach((el) => {
-    el.classList.toggle("theme-bg-dark");
-  });
-  navItems.forEach((el) => {
-    el.classList.toggle("invert-btn");
-  });
-  socials.forEach((el) => {
-    el.classList.toggle("theme-fill-dark");
-  });
-  if (!window.location.href.indexOf("contact") > -1) {
-    ctas.forEach((el) => {
-      el.classList.toggle("invert-btn");
-    });
-    logoSvgCls1.forEach((el) => {
-      el.classList.toggle("theme-fill-dark");
-    });
-    logoSvgCls2.forEach((el) => {
-      el.classList.toggle("theme-stroke-dark");
-    });
-  }
-  if (window.location.href.indexOf("portfolio") > -1) {
-    portLinks.forEach((el) => {
-      el.classList.toggle("invert-btn");
-    });
-    allDetails.forEach((el) => {
-      el.classList.toggle("dark-details");
-    });
-  }
-  if (window.location.href.indexOf("about") > -1) {
-    aboutWrap.classList.toggle("dark-details");
-  }
-  if (window.location.href.indexOf("contact") > -1) {
-    submit.classList.toggle("invert-btn");
-  }
+  body.classList.toggle("dark");
 }

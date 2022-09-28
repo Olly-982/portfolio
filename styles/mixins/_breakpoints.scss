@@ -7,6 +7,8 @@ $breakpoints: (
   "md": 768px,
   "lg": 992px,
   "xl": 1200px,
+  "xxl": 1400px,
+  "full": 1920px,
 );
 
 @mixin xxs {
@@ -36,6 +38,16 @@ $breakpoints: (
 }
 @mixin xl {
   @media screen and (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media screen and (min-width: map-get($breakpoints, "xxl")) {
+    @content;
+  }
+}
+@mixin fhd {
+  @media screen and (min-width: map-get($breakpoints, "full")) {
     @content;
   }
 }

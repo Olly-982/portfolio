@@ -1,7 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" style="overflow-y: scroll;">
+<!doctype html>
+<html lang="en">
 
 <head>
+    <link rel="dns-prefetch" href="https://jamesvincentdesign.com">
+    <!-- HTML Meta Tags -->
+    <meta name="description" content="A Vancouver based BCIT New Media and Web development student and freelance designer/developer. Contact me with any questions.">
     <meta name="robots" content="index follow">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDPV6PK5G2"></script>
@@ -15,10 +18,6 @@
 
         gtag('config', 'G-ZDPV6PK5G2');
     </script>
-    <!-- <link rel="shortcut icon" href="./resources/images/MetaLogo.svg" type="image/x-icon"> -->
-    <link rel="dns-prefetch" href="https://jamesvincentdesign.com">
-    <!-- HTML Meta Tags -->
-    <meta name="description" content="A Vancouver based BCIT New Media and Web development student and freelance designer/developer. Contact me with any questions.">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://www.jamesvincentdesign/">
@@ -44,11 +43,7 @@
 
     <!-- PAGE SETUP -->
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Language" content="en" />
-    <meta name="google" content="notranslate" />
-    <meta name="robots" content="noindex,nofollow" />
     <!-- FONT IMPORTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,10 +51,10 @@
     <!-- STYLES -->
     <link rel="stylesheet" href="styles/main.min.css" />
     <title><?php echo $currPage ?> | jamesvicentdesign</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script defer src="./scripts/particle-mouse-follow.js"></script>
     <script defer src="./scripts/index.js"></script>
 </head>
 
-<body class="block-el">
-    <div class="theme-wrapper container">
+<body>
+    <div class="theme-wrapper">
