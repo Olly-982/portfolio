@@ -16,10 +16,6 @@ a:active {
   color: inherit;
 }
 
-// img {
-//   width: 100%;
-// }
-
 body:hover,
 a:hover,
 label:hover {
@@ -69,6 +65,9 @@ body {
       outline-offset: 2px;
     }
   }
+  .details {
+    color: $secondary;
+  }
 }
 // dark mode
 body.dark {
@@ -99,6 +98,9 @@ body.dark {
     background-color: $primary;
     color: $secondary;
   }
+  .details {
+    color: $primary;
+  }
 }
 
 .theme-wrapper {
@@ -110,7 +112,6 @@ body.dark {
   min-height: 100vh;
   margin: 0 auto;
   overflow: hidden;
-  // cursor: url(../resources/images/LogoCursor.png), auto;
 }
 
 ::-webkit-scrollbar {
@@ -496,16 +497,12 @@ main {
   margin: 5em auto;
 }
 
-.dark-details {
-  background-color: rgba(0, 0, 0, 0.9) !important;
-}
 .grid-item {
   transition: all 0.5s ease !important;
   overflow: hidden;
   .details {
     display: block;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.9);
     top: 0;
     height: 100%;
     width: 100%;
@@ -513,18 +510,18 @@ main {
     padding-left: 1em;
     flex-direction: column;
     justify-content: space-evenly;
-    h3 {
+    h2 {
       font-size: 2em;
+      font-weight: 500;
     }
     p {
-      font-size: 1.25em;
+      font-size: 1.5em;
     }
     .port-link {
       display: block;
       font-size: 1.5em;
+      font-weight: 600;
       padding: 0.5em;
-      background-color: $secondary;
-      color: $primary;
       width: 50%;
       text-align: center;
       margin: 0 auto;
@@ -693,7 +690,6 @@ main {
   flex-direction: column;
   margin-top: 5em;
   @include sm {
-    // rotate: none !important;
     flex-direction: row;
     translate: 40px;
     bottom: 10px;

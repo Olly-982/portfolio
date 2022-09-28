@@ -22,7 +22,7 @@
             <label class="text-el contact-label" for="Message">Let me know how I can help you: </label>
             <textarea name="Message" id="Message" cols="30" rows="10" maxlength="1000" required></textarea>
         </div>
-        <input class="submit" type="submit" value="Submit">
+        <input class="submit button" type="submit" value="Submit">
     </form>
 
 </div>

@@ -12,22 +12,27 @@ if (allPortfolioFilter) {
 
 //////////////////////////////
 // svg anmation
+d = 0;
 allSVGPaths.forEach((el) => {
+  d += 250;
   length = el.getTotalLength();
-  console.log(length);
+  el.style.strokeDasharray = length;
+  el.style.strokeDashoffset = length;
+  el.animate(
+    [
+      { strokeDashoffset: length, offset: 0 },
+      { strokeDashoffset: 0, offset: 0.75 },
+      { strokeDashoffset: 0, offset: 1 },
+    ],
+    {
+      duration: 5000,
+      iterations: Infinity,
+      direction: "alternate",
+      easing: "ease-in-out",
+      delay: d,
+    }
+  );
 });
-
-// anime({
-//   targets: "#Layer_1, .cls-2",
-//   strokeDashoffset: [anime.setDashoffset, 0],
-//   easing: "easeInOutSine",
-//   duration: 1500,
-//   delay: function (el, i) {
-//     return i * 550;
-//   },
-//   direction: "alternate",
-//   loop: true,
-// });
 
 ///////////////////////////////////
 // nav event handlers

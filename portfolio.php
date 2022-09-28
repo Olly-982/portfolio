@@ -25,100 +25,92 @@
     <div class="grid">
       <div class="grid-sizer"></div>
       <div class="grid-item development">
-        <div class="details">
+        <div class="details shade">
           <h2 class="">BCIT yearbook</h2>
           <p class="">a digital yearbook for me and my classmates. (IN DEVELOPMENT)</p>
-          <a class="port-link" target="new" href="http://147.182.251.166/">View It</a>
+          <a class="port-link button" target="new" href="http://147.182.251.166/">View It</a>
         </div>
-        <img src="./resources/images/development/yearbook.png" alt="an image of a responsive 404 page with a blue and purple color scheme">
+        <img src="./resources/images/development/yearbook.webp" alt="an image of a responsive 404 page with a blue and purple color scheme">
       </div>
       <div class="grid-item development">
-        <div class="details">
-          <h2 class="">Mp3 Player</h2>
-          <p class="">an mp3 player with a particle animation background.</p>
-          <a class="port-link" target="new" href="https://mp3player.jamesvincentdesign.com/">View It</a>
+        <div class="details shade">
+          <h2>Mp3 Player</h2>
+          <p>an mp3 player with a particle animation background.</p>
+          <a class="port-link button" target="new" href="https://mp3player.jamesvincentdesign.com/">View It</a>
         </div>
         <img src="./resources/images/development/mp3Pic.png" alt="an image of a responsive 404 page with a blue and purple color scheme">
       </div>
       <div class="grid-item development">
-        <div class="details">
-          <h2 class="">Pomodoro</h2>
-          <p class="">a configurable pomodoro app using local storage to preserve preferences.</p>
-          <a class="port-link" target="new" href="https://pomodoro.jamesvincentdesign.com/">View It</a>
+        <div class="details shade">
+          <h2>Pomodoro</h2>
+          <p>a configurable pomodoro app using local storage to preserve preferences.</p>
+          <a class="port-link button" target="new" href="https://pomodoro.jamesvincentdesign.com/">View It</a>
         </div>
         <img src="./resources/images/development/pomodoro.png" alt="an image of a responsive 404 page with a blue and purple color scheme">
       </div>
       <div class="grid-item development">
-        <div class="details">
-          <h2 class="">Spiral Inc. responsive 404</h2>
-          <p class="">a simple responsive 404 page</p>
-          <a class="port-link" target="new" href="https://spiral404.jamesvincentdesign.com/">View It</a>
+        <div class="details shade">
+          <h2>Spiral Inc. responsive 404</h2>
+          <p>a simple responsive 404 page</p>
+          <a class="port-link button" target="new" href="https://spiral404.jamesvincentdesign.com/">View It</a>
         </div>
         <img src="./resources/images/development/responsive404.png" alt="an image of a responsive 404 page with a blue and purple color scheme">
       </div>
       <div class="grid-item development">
-        <div class="details">
-          <h2 class="">Rent a Bot</h2>
-          <p class="">a simple page using flexbox</p>
-          <a class="port-link" target="new" href="https://rent-a-bot.jamesvincentdesign.com/">View It</a>
+        <div class="details shade">
+          <h2>Studiyo</h2>
+          <p>an example of a corporate style webpage using my team's design.</p>
+          <a class="port-link button" target="new" href="https://studiyo.jamesvincentdesign.com/index">View It</a>
         </div>
-        <img src="./resources/images/development/rent-a-bot.png" alt="an image of rent-a-bot webpage">
+        <img src="./resources/images/development/studiyo.webp" alt="an image of studiyo webpage">
       </div>
       <div class="grid-item development">
-        <div class="details">
-          <h2 class="">Studiyo</h2>
-          <p class="">an example of a corporate style webpage using my team's design.</p>
-          <a class="port-link" target="new" href="https://studiyo.jamesvincentdesign.com/index">View It</a>
-        </div>
-        <img src="./resources/images/development/studiyo.png" alt="an image of studiyo webpage">
-      </div>
-      <div class="grid-item development">
-        <div class="details">
-          <h2 class="">RocketInc.</h2>
-          <p class="">an example of a corporate style responsive webpage.</p>
-          <a class="port-link" target="new" href="http://rocketinc.jamesvincentdesign.com/">View It</a>
+        <div class="details shade">
+          <h2>RocketInc.</h2>
+          <p>an example of a corporate style responsive webpage.</p>
+          <a class="port-link button" target="new" href="http://rocketinc.jamesvincentdesign.com/">View It</a>
         </div>
         <img src="./resources/images/development/rocketinc.png" alt="an image of the rocketinc webpage">
       </div>
       <div class="grid-item illustration">
-        <div class="details">
-          <h2 class="">Dragon Slayer</h2>
-          <p class="">An illustration made with Adobe Illustrator using the pen tool, primitive shapes and pathfinder.</p>
-          <a class="port-link" target="new" href="./resources/images/illustration/dragon.png">View It</a>
+        <div class="details shade">
+          <h2>Dragon Slayer</h2>
+          <p>An illustration made with Adobe Illustrator using the pen tool, primitive shapes and pathfinder.</p>
+          <a class="port-link button" target="new" href="./resources/images/illustration/full/dragonFull.png">View It</a>
         </div>
         <img src="./resources/images/illustration/dragon.png" alt="an illustration of a colorful dragon with robots and a golden knight">
       </div>
       <div class="grid-item illustration">
-        <div class="details">
-          <h2 class="">Soldier</h2>
-          <p class="">An illustration made with Adobe Illustrator using the pen tool.</p>
-          <a class="port-link" target="new" href="resources/images/illustration/soldier.png">View It</a>
+        <div class="details shade">
+          <h2>Soldier</h2>
+          <p>An illustration made with Adobe Illustrator using the pen tool.</p>
+          <a class="port-link button" target="new" href="resources/images/illustration/full/soldierFull.png">View It</a>
         </div>
         <img src="./resources/images/illustration/soldier.png" alt="an illustration of a statue of a pensive soldier">
       </div>
       <div class="grid-item illustration">
-        <div class="details">
-          <h2 class="">Wiimote</h2>
-          <p class="">A technical illustration made with Adobe Illustrator.</p>
-          <a class="port-link" target="new" href="./resources/images/illustration/wiimote.png">View It</a>
+        <div class="details shade">
+          <h2>Wiimote</h2>
+          <p>A technical illustration made with Adobe Illustrator.</p>
+          <a class="port-link button" target="new" href="./resources/images/illustration/full/wiiMoteFull.png">View It</a>
         </div>
         <img src="./resources/images/illustration/wiimote.png" alt="a realistic illustration of a wiimote">
       </div>
       <div class="grid-item design">
-        <div class="details">
-          <h2 class="">Huion Display Ads</h2>
-          <p class="">A package of display ads made as an examle for a possible campaign.</p>
-          <a class="port-link" target="new" href="./resources/images/design/Huion-One-Page.png">View It</a>
+        <div class="details shade">
+          <h2>Huion Display Ads</h2>
+          <p>A package of display ads made as an examle for a possible campaign.</p>
+          <a class="port-link button" target="new" href="./resources/images/design/HuionOnePage.png">View It</a>
         </div>
-        <img src="./resources/images/design/Huion-One-Page.png" alt="a one page spread of some display ads">
+        <img src="./resources/images/design/HuionOnePage.png" alt="a one page spread of some display ads">
       </div>
       <div class="grid-item design">
-        <div class="details">
-          <h2 class="">SPCA Display Ads</h2>
-          <p class="">A package of display ads made as an examle for a possible campaign.</p>
-          <a class="port-link" target="new" href="./resources/images/design/spca-one-page.png">View It</a>
+        <div class="details shade">
+          <h2>SPCA Display Ads</h2>
+          <p>A package of display ads made as an examle for a possible campaign.</p>
+          <a class="port-link button" target="new" href="./resources/images/design/SPCAOnePage.png">View It</a>
         </div>
-        <img src="./resources/images/design/spca-one-page.png" alt="a one page spread of some display ads">
+        <img src="./resources/images/design/SPCAOnePage.png" alt="a one page spread of some display ads">
       </div>
     </div>
   </div>
